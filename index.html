@@ -89,14 +89,17 @@
                     </li> -->
                 </ul>
                 <span class="nav-item">
-                    <a class="btn-outline-sm" target="_blank" href="https://www.paypal.com/donate/?token=3K8tHS3v0sowSkaKJpr0A3VhFde0L5vxhqjAgF7NGbxunah4K23wGty5-7XeIetMhku-Vm&country.x=US&locale.x=US">Donate</a>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick" />
+                        <input type="hidden" name="hosted_button_id" value="BBTSWNZTSVLNG" />
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" name="submit"/>
+                        <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                        </form>
                 </span>
             </div>
         </div> 
     </nav> 
     
-
-
     
     <header id="header" class="header">
         <div class="header-content">
@@ -580,8 +583,13 @@
                 <div class="col-lg-9">
                     <h4 style="text-align: left;">Seamly is absolutely free for all, help us keep the development going!</h4>
                 </div>
-                <div class="col-lg-3">
-                    <a class="btn-outline-sm" target="_blank" href="https://www.paypal.com/donate/?token=3K8tHS3v0sowSkaKJpr0A3VhFde0L5vxhqjAgF7NGbxunah4K23wGty5-7XeIetMhku-Vm&country.x=US&locale.x=US" style="height: 30px;float: right;">Donate Now</a>
+                <div class="col-lg-3">                    
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input type="hidden" name="hosted_button_id" value="BBTSWNZTSVLNG" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" name="submit"/>
+                    <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                    </form>
                 </div>
             </div>
         </div>
@@ -1047,22 +1055,22 @@
             {
             setTimeout(function () {                
                 $('#windowsoszip')[0].click();
-            }, 3000);                    
+            }, 1000);                    
             }
             else if(currentos == 'mac')
             {
             setTimeout(function () {                
                 $('#macoszip1')[0].click();
-            }, 3000);
+            }, 1000);
             setTimeout(function () {                
                 $('#macoszip2')[0].click();
-            }, 6000);
+            }, 2000);
             }
             else if(currentos == 'linux')
             {
             setTimeout(function () {                
                 $('#linuxos')[0].click()
-            }, 3000);
+            }, 1000);
             
             }
             currentos = '';
